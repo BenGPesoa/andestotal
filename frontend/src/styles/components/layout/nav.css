@@ -1,0 +1,43 @@
+nav {
+    box-sizing: border-box;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: .2rem 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: -2px -2px 8px rgba(0, 0, 15, 0.2);    
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: #dedede;
+    box-shadow: -2px -2px 8px rgba(0, 0, 15, 0.5);
+}
+
+.activo {
+    background-color: black;
+    color: #dedede;
+    box-shadow: -2px -2px 8px rgba(0, 0, 15, 0.5);
+}

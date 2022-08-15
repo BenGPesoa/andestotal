@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  overflow: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.introPaginas {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.introPaginas h3{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2rem;
+  margin: 2rem;
+  border-bottom: solid 1px black;
+}
+
+.introPaginas p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.texto {
+  width: 70%;
+  margin: 4rem auto;
+  text-align: center;
+
+}
+
+.texto h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2rem;
+  margin: 2rem;
+  border-bottom: solid 1px black;
+}
+
+.texto img {
+  max-width: 80px;
+  border-radius: 5px;
+  margin: 5px;
+}

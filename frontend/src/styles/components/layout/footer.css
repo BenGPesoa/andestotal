@@ -1,0 +1,142 @@
+footer {
+    background-image: url('../../../../public/img/stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    height: 330px;    
+}
+
+.footer1 {
+    height: 250px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.footer1 h4 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.footer1 h5 {
+    font-size: 18px;
+}
+
+.datos {
+    display: block;
+    width: 25%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: 0;
+    border-right: solid 1px white;
+}
+
+.social {
+    display: block;
+    width: 30%;
+    height: 85%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    border-right: solid 1px white;
+}
+
+.fila {
+    margin-bottom: 1rem;
+
+}
+
+.sm {
+    text-align: center;
+}
+
+.social img {
+    width: 40%;
+}
+
+.news {
+    display: block;
+    width: 25%;
+    height: 85%;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: white;    
+    text-align: center;
+}
+
+.itemNews {
+    height: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid 1px white;
+    margin-bottom: 0.5rem;
+    text-align: center;
+
+}
+
+.areaNews {
+    height: 60px;
+    width: 150px;
+    resize: none;
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid 1px white;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+  }
+
+.btnEnviar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 15, 0.5);
+    color: white;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btnEnviar:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 15, 0.8);
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.footer2 {
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 20, 0.5);
+    box-sizing: border-box;
+    border-top: solid 1px white;
+}
+
+.footer2 p {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: #dedede;
+    line-height: 30px;
+}

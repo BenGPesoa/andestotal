@@ -1,0 +1,85 @@
+body {
+    overflow: hidden;
+}
+
+.fondoIndex {
+    width: 100%;
+}
+
+
+
+.fondo img {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    z-index: 1;
+    width: 300%;
+    height: auto;
+    -webkit-animation: spin 400s linear infinite;
+    -moz-animation: spin 400s linear infinite;
+    animation: spin 400s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.cerro img {
+    position: fixed;
+    bottom: -200px;
+    margin: 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+.overText h1 {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    z-index: 3;
+    color: rgb(245, 245, 255);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.overText h2 {
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    z-index: 3;
+    color: rgb(245, 245, 255);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 50px;
+    border-top: solid 1px #fff;
+}
+
+
+.overText h4 a {
+    position: fixed;
+    top: 60%;
+    left: 35%;
+    z-index: 3;
+    color: rgb(245, 245, 255);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
