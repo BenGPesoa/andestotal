@@ -53,5 +53,5 @@ const EfemeridesPage = (props) => {
     </div>
     </div>
   );
-};
+}
 export default EfemeridesPage;

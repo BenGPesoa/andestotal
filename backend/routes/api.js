@@ -22,7 +22,7 @@ router.get('/novedades', async function (req, res, next) {
                 ...novedades,
                 imagen: ''
             }
-        };
+        }
     });
 
     res.json(novedades);
