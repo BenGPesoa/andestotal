@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-08-2022 a las 13:24:34
+-- Tiempo de generación: 20-08-2022 a las 11:28:59
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -31,21 +31,20 @@ DROP TABLE IF EXISTS `novedades`;
 CREATE TABLE IF NOT EXISTS `novedades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(250) NOT NULL,
-  `subtitulo` text NOT NULL,
   `cuerpo` text NOT NULL,
   `id_img` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `novedades`
 --
 
-INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`, `id_img`) VALUES
-(1, '15 de julio', 'esta noche podremos ver a Saturno 4º al noroeste de la Luna. Una conjunción ideal para ver a simple vista y con binoculares. (23:00 hs)', 'esta noche podremos ver a Saturno 4º al noroeste de la Luna. Una conjunción ideal para ver a simple vista y con binoculares. (23:00 hs)', 'c8dw1cvddhw3iaeg5ggo'),
-(2, '19 de julio', 'durante la madrugada, Júpiter estará a solo 2,5º al oeste de la Luna. Otra notable conjunción para observar a ojo desnudo y con binoculares. (3:00 hs)', 'durante la madrugada, Júpiter estará a solo 2,5º al oeste de la Luna. Otra notable conjunción para observar a ojo desnudo y con binoculares. (3:00 hs)', 'lb3txuetznitkulkfknm'),
-(3, '21 de julio', 'una nueva conjunción en la alta madrugada: Marte se ubica a 3º al este la Luna. La escena ocurre a mediana altura sobre el cielo oriental y, por supuesto, podrá verse a simple vista.  (5:00 hs)', 'una nueva conjunción en la alta madrugada: Marte se ubica a 3º al este la Luna. La escena ocurre a mediana altura sobre el cielo oriental y, por supuesto, podrá verse a simple vista.  (5:00 hs)', 'wwsnuoyp190frdo254uo'),
-(4, '26 de julio', 'poco antes del amanecer, la Luna y Venus (separados por 4º) protagonizan una bonita conjunción a poca altura sobre el horizonte noroeste. Dada la claridad del crepúsculo matutino, se recomienda el uso de binoculares para una mejor observación. (7:15 hs)', 'poco antes del amanecer, la Luna y Venus (separados por 4º) protagonizan una bonita conjunción a poca altura sobre el horizonte noroeste. Dada la claridad del crepúsculo matutino, se recomienda el uso de binoculares para una mejor observación. (7:15 hs)', 'njeyv7snl5zkypfs2lfj');
+INSERT INTO `novedades` (`id`, `titulo`, `cuerpo`, `id_img`) VALUES
+(1, '15 de julio', 'Esta noche podremos ver a Saturno 4º al noroeste de la Luna. Una conjunción ideal para ver a simple vista y con binoculares. (23:00 hs)', 'c8dw1cvddhw3iaeg5ggo'),
+(2, '19 de julio', 'Durante la madrugada, Júpiter estará a solo 2,5º al oeste de la Luna. Otra notable conjunción para observar a ojo desnudo y con binoculares. (3:00 hs)', 'lb3txuetznitkulkfknm'),
+(3, '21 de julio', 'Una nueva conjunción en la alta madrugada: Marte se ubica a 3º al este la Luna. La escena ocurre a mediana altura sobre el cielo oriental y, por supuesto, podrá verse a simple vista.  (5:00 hs)', 'wwsnuoyp190frdo254uo'),
+(4, '26 de julio', 'Poco antes del amanecer, la Luna y Venus (separados por 4º) protagonizan una bonita conjunción a poca altura sobre el horizonte noroeste. Dada la claridad del crepúsculo matutino, se recomienda el uso de binoculares para una mejor observación. (7:15 hs)', 'njeyv7snl5zkypfs2lfj');
 
 -- --------------------------------------------------------
 
