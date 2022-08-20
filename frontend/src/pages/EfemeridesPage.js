@@ -41,8 +41,7 @@ const EfemeridesPage = (props) => {
         <p>Cargando...</p>
       ) : (
         novedades.map(item => <NovedadItem key={item.id}
-          title={item.titulo} subtitle={item.subtitulo}
-          body={item.cuerpo} image={item.imagen} />)
+          title={item.titulo} body={item.cuerpo} image={item.imagen} />)
       )
       }
       </div>

@@ -54,7 +54,7 @@ router.post('/agregar', async (req, res, next) => {
     }
 
 
-    if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
+    if (req.body.titulo != "" && req.body.cuerpo != "") {
       await novedadesModel.insertNovedad({
         ...req.body,
         id_img
@@ -72,7 +72,7 @@ router.post('/agregar', async (req, res, next) => {
     res.render('admin/agregar', {
       layout: 'admin/layout',
       error: true,
-      message: 'No se cargo la novedad'
+      message: 'No se guardó el evento'
     });
   }
 });
@@ -122,7 +122,6 @@ router.post('/editar', async (req, res, next) => {
 
     let obj = {
       titulo: req.body.titulo,
-      subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo,
       id_img
     }

@@ -2,26 +2,6 @@
     margin-bottom: 2rem;
 }
 
-
-.mesActual {
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border-bottom: solid 1px black;
-}
-
-#mes, #anio {
-    display: inline-block;
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2rem;    
-}
-
-#mes {
-    margin-right: 10px;
-}
-
 .fasesLuna {
     width: 80%;
     text-align: center;
@@ -66,5 +46,7 @@
 }
 
 .novedades img {
-    max-width: 60%;
+    max-width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
