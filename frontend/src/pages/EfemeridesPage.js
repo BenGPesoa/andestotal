@@ -12,10 +12,11 @@ const EfemeridesPage = (props) => {
 
   useEffect(() => {
     const cargarNovedades = async () => {
-      setLoading = true;
+      setLoading(true);
       const response = await axios.get('http://localhost:3000/api/novedades');
       setNovedades(response.data);
-      setLoading = false;
+      setLoading(false);
+      console.log(novedades);
     };
 
     cargarNovedades();
