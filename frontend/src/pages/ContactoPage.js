@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useState } from 'react';
+import axios from 'axios';
 import "../styles/components/pages/ContactoPage.css";
 
 const ContactoPage = (props) => {
+
+  const initialForm = {
+    nombre: '',
+    mail: '',
+    mensaje: ''
+  }
+
+  const [sending, setSending] = useState(false);
+  const [msg, setMsg] = useState('');
+  const [formData, setFormData] = useState(initialForm);
+
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData(oldData => ({
+      ...oldData,
+      [name]: value
+    }));
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    setMsg('');
+    setSending(true);
+    const response = await axios.post('http://localhost:3000/api/contacto', formData);
+    setSending(false);
+    setMsg(response.data.message);
+    if (response.data.error === false) {
+      setFormData(initialForm)
+    }
+  }
+
+
+
   return (
     <div className="contacto">
       <div className="introPaginas">
@@ -9,33 +43,33 @@ const ContactoPage = (props) => {
         <p>Escribenos con tus preguntas, opiniones y comentarios.</p>
       </div>
       <div className="contactoForm">
-        <form action="">
+        <form action="/contacto" method='post' onSubmit={handleSubmit}>
           <div className="lineaContacto">
             <label for="nombre" className="labelContacto">
               Nombre
             </label>
-            <input type="text" name="nombre" className="inputContacto" />
+            <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} className="inputContacto" />
           </div>
           <div className="lineaContacto">
             <label for="mail" className="labelContacto">
               Email
             </label>
-            <input type="email" name="mail" className="inputContacto" />
+            <input type="email" name="mail" value={formData.mail} onChange={handleChange} className="inputContacto" />
           </div>
           <div className="lineaContacto">
             <label for="mensaje" className="labelContacto">
               Mensaje
             </label>
-            <textarea name="mensaje" className="areaContacto"></textarea>
+            <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} className="areaContacto"></textarea>
           </div>
           <div className="lineaContacto">
             <button type="submit" className="btnContacto">
               Enviar
             </button>
-          </div>
-
-          
+          </div>          
         </form>
+        {sending ? <p>Enviando...</p> : null}
+        {msg ? <p>{msg}</p> : null}
       </div>
       <div className="sociales">
         <div className="texto">
