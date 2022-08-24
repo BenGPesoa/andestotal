@@ -46,7 +46,6 @@ router.post('/agregar', async (req, res, next) => {
   try {
 
     var id_img = '';
-    console.log(req.files.imagen);
 
     if (req.files && Object.keys(req.files).length > 0) {
       imagen = req.files.imagen;
